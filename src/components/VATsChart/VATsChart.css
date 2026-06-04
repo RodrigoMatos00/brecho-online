@@ -1,0 +1,61 @@
+/* VATsChart Styles */
+.vats-chart {
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 100px;
+  padding-bottom: 4px;
+}
+
+.chart-bar-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  height: 100%;
+}
+
+.chart-bar {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  transition: height var(--transition-slow);
+  min-height: 6px;
+}
+
+.chart-bar.positivo {
+  background: var(--verde-musgo);
+}
+
+.chart-bar.negativo {
+  background: var(--danger);
+}
+
+.chart-label {
+  font-size: 0.55rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.vats-chart-empty {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
