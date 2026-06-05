@@ -1,0 +1,252 @@
+/* Perfil Styles */
+.perfil-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.perfil-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Card de Perfil */
+.perfil-card .card-body {
+  text-align: center;
+}
+
+.perfil-avatar-area {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.perfil-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--verde-musgo);
+}
+
+.perfil-avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--verde-musgo), var(--verde-claro));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  border: 4px solid var(--verde-musgo);
+}
+
+.perfil-selo {
+  position: absolute;
+  bottom: 0;
+  right: -4px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 2px 4px;
+  border: 2px solid var(--border-color);
+}
+
+.perfil-nome {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.perfil-email {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.perfil-data {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+/* Estatísticas */
+.perfil-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 14px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stat-valor {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--verde-musgo);
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border-color);
+}
+
+/* VATs Card */
+.vats-card {
+  background: linear-gradient(135deg, var(--verde-escuro), var(--verde-musgo));
+  color: white;
+  border: none !important;
+}
+
+.vats-titulo {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.vats-saldo {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.vats-info {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  margin-bottom: 16px;
+}
+
+.vats-acoes {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.vats-card .btn-primary {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+.vats-card .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.vats-card .btn-secondary {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+.vats-card .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.vats-card .divider {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.grafico-titulo {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.vats-card .vats-chart {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.vats-card .chart-bar.positivo {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.vats-card .chart-bar.negativo {
+  background: rgba(255, 120, 120, 0.8);
+}
+
+.vats-card .chart-label {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.vats-card .chart-legend {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Info list */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.info-icone {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Editar */
+.perfil-editar {
+  min-width: 0;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .perfil-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .perfil-card {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .perfil-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil-card {
+    grid-column: span 1;
+  }
+
+  .vats-acoes {
+    flex-direction: column;
+  }
+}
