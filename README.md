@@ -91,7 +91,7 @@ Usuários:
 
 ### Explorar Anúncios
 
-![Anúncios](./screenshots/explorar.png)
+![Explorar](./screenshots/explorar.png)
 
 ### Detalhes do Anúncio
 
