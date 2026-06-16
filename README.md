@@ -87,27 +87,27 @@ Usuários:
 
 ### Cadastro
 
-![Login](./screenshots/cadastro.png)
+![Cadastro](./screenshots/cadastro.png)
 
 ### Explorar Anúncios
 
-![Login](./screenshots/explorar.png)
+![Anúncios](./screenshots/explorar.png)
 
 ### Detalhes do Anúncio
 
-![Login](./screenshots/detalhes.png)
+![Detalhes](./screenshots/detalhes.png)
 
 ### Negociações
 
-![Login](./screenshots/negociacoes.png)
+![Negociações](./screenshots/negociacoes.png)
 
 ### Perfil do Usuário
 
-![Login](./screenshots/perfil.png)
+![Perfil](./screenshots/perfil.png)
 
 ### Garagem Virtual
 
-![Login](./screenshots/garagem.png)
+![Garagem](./screenshots/garagem.png)
 
 ---
 
