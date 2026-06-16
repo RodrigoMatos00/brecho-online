@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useAuth } from '../../../../brecho-online - Copia/src/context/AuthContext';
-import {
-  getAnuncioById, getUserById, getAnuncios,
-  getPropostas, setPropostas,
-} from '../../../../brecho-online - Copia/src/utils/storage';
-import {
-  gerarId, formatarData, formatarVats,
-  diferencaPercent, iniciais,
-} from '../../../../brecho-online - Copia/src/utils/helpers';
-import StarRating from '../../../../brecho-online - Copia/src/components/StarRating/StarRating';
-import Badge from '../../../../brecho-online - Copia/src/components/Badge/Badge';
-import Modal from '../../../../brecho-online - Copia/src/components/Modal/Modal';
+import { useAuth } from '../../context/AuthContext';
+import { getAnuncioById, getUserById, getAnuncios, getPropostas, setPropostas } from '../../utils/storage';
+import { gerarId, formatarData, formatarVats, diferencaPercent, iniciais } from '../../utils/helpers';
+import StarRating from '../../components/StarRating/StarRating';
+import Badge from "../../components/Badge/Badge";
+import Modal from "../../components/Modal/Modal";
 import './DetalheAnuncio.css';
 
 /**
