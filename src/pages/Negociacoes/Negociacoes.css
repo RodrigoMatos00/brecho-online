@@ -1,0 +1,135 @@
+/* Negociacoes Styles */
+.negociacoes-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.proposta-card {
+  transition: box-shadow var(--transition-normal);
+}
+
+.proposta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.proposta-anuncio-info {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.proposta-thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--cinza-200);
+}
+
+.proposta-anuncio-titulo {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.proposta-pessoa {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
+.proposta-data {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+/* Detalhes */
+.proposta-detalhes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+}
+
+.proposta-valor {
+  font-weight: 700;
+  color: var(--verde-musgo);
+  font-size: 1rem;
+}
+
+/* Histórico */
+.proposta-historico {
+  margin-bottom: 12px;
+  padding: 12px;
+  background: var(--cinza-100);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--areia-escura);
+}
+
+.historico-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.historico-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 4px 0;
+}
+
+.historico-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--areia-escura);
+  flex-shrink: 0;
+}
+
+.historico-data {
+  margin-left: auto;
+  font-size: 0.72rem;
+  color: var(--cinza-400);
+}
+
+/* Ações */
+.proposta-acoes {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .proposta-historico {
+  background: var(--cinza-200);
+}
+
+@media (max-width: 600px) {
+  .proposta-header {
+    flex-direction: column;
+  }
+
+  .proposta-acoes {
+    flex-direction: column;
+  }
+
+  .proposta-acoes .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

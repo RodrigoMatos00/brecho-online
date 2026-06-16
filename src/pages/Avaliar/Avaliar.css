@@ -1,0 +1,113 @@
+/* Avaliar Styles */
+.avaliar-page {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  background: var(--bg-primary);
+}
+
+.avaliar-container {
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.avaliar-card {
+  text-align: center;
+}
+
+.avaliar-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.avaliar-titulo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.avaliar-subtitulo {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+/* Avaliado */
+.avaliado-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.avaliado-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--verde-musgo);
+}
+
+.avaliado-avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--verde-musgo);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 3px solid var(--verde-musgo);
+}
+
+.avaliado-nome {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Estrelas */
+.avaliar-estrelas {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.estrelas-descricao {
+  font-size: 0.9rem;
+  color: var(--verde-musgo);
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Ações */
+.avaliar-acoes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Já avaliou */
+.ja-avaliado {
+  text-align: center;
+}
+
+.ja-avaliado-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.ja-avaliado h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.ja-avaliado p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
